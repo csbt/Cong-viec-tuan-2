@@ -41,7 +41,7 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
 
     VD : **2x** : xóa 2 kí tự
 - **ndd*** : để xóa dòng hiện tại và n-1 dòng bên dưới dòng hiện tại
-- 
+ 
     VD: **2đ** : xóa 2 dòng
 - **v** bắt đầu bôi đen
 
