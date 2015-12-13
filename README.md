@@ -29,21 +29,24 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
   + **M** : đưa con trỏ về kí tự đầu tiên của dòng giữa trong màn hình hiện tại
 
 ###Các lệnh xóa kí tự
-- **x**    : để xóa kí tự hiện tại
-- **X**    : để xóa kí tự phía trước
-- **dw**   : để xóa 1 từ
-- **dd**   : để xóa 1 dòng
-- **cw**   : để xóa 1 từ đồng thời chuyển sang chế độ *Insert*
-- **cc**   : để xóa 1 dòng đồng thời chuyển sang chế độ *Insert*
-- **d^**   : để xóa kí tự từ bên trái con trỏ đến đầu dòng
-- **d$**   : để xóa kí tự từ bên phải con trỏ đến cuối dòng
-- **nx**   : để xóa  kí tự hiện tại và n-1 kí tự bên phải kí tự hiện tại
+- **x**   : để xóa kí tự hiện tại
+- **X**   : để xóa kí tự phía trước
+- **dw**  : để xóa 1 từ
+- **dd**  : để xóa 1 dòng
+- **cw**  : để xóa 1 từ đồng thời chuyển sang chế độ *Insert*
+- **cc**  : để xóa 1 dòng đồng thời chuyển sang chế độ *Insert*
+- **d^**  : để xóa kí tự từ bên trái con trỏ đến đầu dòng
+- **d$**  : để xóa kí tự từ bên phải con trỏ đến cuối dòng
+- **nx**  : để xóa  kí tự hiện tại và n-1 kí tự bên phải kí tự hiện tại
 
     VD : **2x** : xóa 2 kí tự
-- **ndd*** : để xóa dòng hiện tại và n-1 dòng bên dưới dòng hiện tại
+- **ndd** : để xóa dòng hiện tại và n-1 dòng bên dưới dòng hiện tại
  
-    VD: **2đ** : xóa 2 dòng
-- **v** bắt đầu bôi đen
+    VD : **2đ** : xóa 2 dòng
+###Một số lệnh khác
+- **v** : để bắt đầu bôi đen
+- **.** : tiếp tục thực hiện lệnh trước đó
+- **u** : undo
 
 ##Để chuyển sang chế độ insert (đang ở chế độ command) : ấn các phím:
   + **a** : con trỏ xuất hiện sau kí tự hiện tại
