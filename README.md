@@ -17,7 +17,8 @@ VI có 2 chế độ là command và insert :
   + **B** : sang trái 1 từ
   + **K** : lên 1 dòng
   + **J** : xuống 1 dòng
-  + **:*số dòng*** : để chuyển con trỏ về đầu dòng đó.
+  + **:số dòng** : để chuyển con trỏ về đầu dòng đó.
+
       VD:   **:20** con trỏ sẽ xuất hiện ở đầu dòng 20
 - **0 ( phím số 0)** : để đưa con trỏ về đầu dòng
 - **V** bắt đầu bôi đen
