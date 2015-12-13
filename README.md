@@ -42,11 +42,21 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
     VD : **2x** : xóa 2 kí tự
 - **ndd** : để xóa dòng hiện tại và n-1 dòng bên dưới dòng hiện tại
  
-    VD : **2đ** : xóa 2 dòng
+    VD : **2dd** : xóa 2 dòng
+###Các lệnh tìm kiếm
+###Các lệnh thay thế
+- **:ab abcd lenh thay the** : thay thế *abcd* bằng *lenh thay the* khi ở chế độ Insert 
 ###Một số lệnh khác
 - **v** : để bắt đầu bôi đen
 - **.** : tiếp tục thực hiện lệnh trước đó
 - **u** : undo
+- **y** : để coppy
+- **yy** or **Y* : để coppy 1 dòng
+- **p** : để paste
+- **nyy** or **nY** : để coppy dòng hiện tại và n-1 dòng bên dưới dòng hiện tại
+
+   VD : **2yy** coppy 2 dòng
+- gõ lệnh **:1,4t 9** : để coppy từ dòng 1 đến dòng 4 và paste vào dòng 9
 
 ##Để chuyển sang chế độ insert (đang ở chế độ command) : ấn các phím:
   + **a** : con trỏ xuất hiện sau kí tự hiện tại
