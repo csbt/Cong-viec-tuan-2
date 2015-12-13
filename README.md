@@ -20,11 +20,14 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
   + **:số dòng** : để chuyển con trỏ về đầu dòng đó.
 
       VD:   **:20** con trỏ sẽ xuất hiện ở đầu dòng 20
+  + **0 ( phím số 0)** : để đưa con trỏ về đầu dòng
+  + **$ ( SHIFT + 4**  : để đưa con trỏ về cuối dòng
   + **SHIFT + H** : đưa con trỏ về kí tự đầu tiên của dòng đầu tiên trong màn hình hiện tại
   + **SHIFT + L** : đưa con trỏ về kí tự đầu tiên của dòng cuối cùng trong màn hình hiện tại
   + **SHIFT + M** : đưa con trỏ về kí tự đầu tiên của dòng giữa trong màn hình hiện tại
-- **0 ( phím số 0)** : để đưa con trỏ về đầu dòng
-- **V** bắt đầu bôi đen
+
+- **V** bắt đầu bôi đen \\
+
 ##Để chuyển sang chế độ insert (đang ở chế độ command) : ấn các phím:
   + **a** : con trỏ xuất hiện sau kí tự hiện tại
   + **A** : con trỏ xuất hiện cuối dòng
