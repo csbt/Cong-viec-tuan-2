@@ -10,7 +10,7 @@ VI có 2 chế độ là command và insert :
 - **<CTRL> + F** : để xuống 1 trang
 - **<CTRL> + B** : để lên 1 trang
 ###Các lệnh với con trỏ
-- Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
+Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
   + **H** : sang trái 1 kí tự
   + **L** : sang phải 1 kí tự
   + **W** : sang phải 1 từ
@@ -20,6 +20,9 @@ VI có 2 chế độ là command và insert :
   + **:số dòng** : để chuyển con trỏ về đầu dòng đó.
 
       VD:   **:20** con trỏ sẽ xuất hiện ở đầu dòng 20
+  + **SHIFT + H** : đưa con trỏ về kí tự đầu tiên của dòng đầu tiên trong màn hình hiện tại
+  + **SHIFT + L** : đưa con trỏ về kí tự đầu tiên của dòng cuối cùng trong màn hình hiện tại
+  + **SHIFT + M** : đưa con trỏ về kí tự đầu tiên của dòng giữa trong màn hình hiện tại
 - **0 ( phím số 0)** : để đưa con trỏ về đầu dòng
 - **V** bắt đầu bôi đen
 ##Để chuyển sang chế độ insert (đang ở chế độ command) : ấn các phím:
