@@ -2,6 +2,7 @@
 <a href="http://imgur.com/lIPGbTW"><img src="http://i.imgur.com/lIPGbTW.png" title="source: imgur.com" /></a>
 #Cách sử dụng trình soạn thảo Vi
 VI có 2 chế độ là command và insert :
+**>>>>>>>>>>>> CHÚ Ý: PHÂN BIỆT CHỮ THƯỜNG VÀ CHỮ IN HOA <<<<<<<<<<<<<**
 ##Để chuyển sang chế độ command (đang ở chế độ insert) : ấn phím ESC
 - Để hiển thị số dòng gõ lệnh **:set nu**
 - **<SHIFT> + J** : để gộp 2 dòng
@@ -11,22 +12,29 @@ VI có 2 chế độ là command và insert :
 - **<CTRL> + B** : để lên 1 trang
 ###Các lệnh với con trỏ
 Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
-  + **H** : sang trái 1 kí tự
-  + **L** : sang phải 1 kí tự
-  + **W** : sang phải 1 từ
-  + **B** : sang trái 1 từ
-  + **K** : lên 1 dòng
-  + **J** : xuống 1 dòng
+  + **h** : sang trái 1 kí tự
+  + **l** : sang phải 1 kí tự
+  + **w** : sang phải 1 từ
+  + **b** : sang trái 1 từ
+  + **k** : lên 1 dòng
+  + **j** : xuống 1 dòng
   + **:số dòng** : để chuyển con trỏ về đầu dòng đó.
 
       VD:   **:20** con trỏ sẽ xuất hiện ở đầu dòng 20
   + **0 ( phím số 0)** : để đưa con trỏ về đầu dòng
   + **$ ( SHIFT + 4**  : để đưa con trỏ về cuối dòng
-  + **SHIFT + H** : đưa con trỏ về kí tự đầu tiên của dòng đầu tiên trong màn hình hiện tại
-  + **SHIFT + L** : đưa con trỏ về kí tự đầu tiên của dòng cuối cùng trong màn hình hiện tại
-  + **SHIFT + M** : đưa con trỏ về kí tự đầu tiên của dòng giữa trong màn hình hiện tại
+  + **H** : đưa con trỏ về kí tự đầu tiên của dòng đầu tiên trong màn hình hiện tại
+  + **L** : đưa con trỏ về kí tự đầu tiên của dòng cuối cùng trong màn hình hiện tại
+  + **M** : đưa con trỏ về kí tự đầu tiên của dòng giữa trong màn hình hiện tại
 
-- **V** bắt đầu bôi đen \\
+###Các lệnh xóa kí tự
+- **x**  : để xóa kí tự hiện tại
+- **X**  : để xóa kí tự phía trước
+- **dw** : để xóa 1 từ
+- **dd** : để xóa 1 dòng
+- **cw** : để xóa 1 từ đồng thời chuyển sang chế độ *Insert*
+- **cc** : để xóa 1 dòng đồng thời chuyển sang chế độ *Insert*
+- **V** bắt đầu bôi đen
 
 ##Để chuyển sang chế độ insert (đang ở chế độ command) : ấn các phím:
   + **a** : con trỏ xuất hiện sau kí tự hiện tại
