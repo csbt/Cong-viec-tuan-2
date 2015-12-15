@@ -11,7 +11,7 @@ VI có 2 chế độ là command và insert :
 - **<CTRL> + U** : để lên nửa trang
 - **<CTRL> + F** : để xuống 1 trang
 - **<CTRL> + B** : để lên 1 trang
-- 
+
 ###Các lệnh với con trỏ
 Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
   + **h** : sang trái 1 kí tự
