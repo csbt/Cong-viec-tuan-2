@@ -101,7 +101,17 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
 ##1. Các câu lệnh kiểm tra thông tin mạng trong Ubuntu
 
 - **ifconfig -a** : Kiểm tra cấu hình các card mạng
+
 - **hostname** :  xem hostname 
+
 - **grep eth & ifconfig** : Xem thông tin cấu hình các card mạng (MAC, địa chỉ IP, gateway..)  của tất cả các card mạng trong máy (tương tự lệnh ipconfig của Windows)
   
 - **route -n** :Kiểm tra đường đi của gói tin (tương tự lệnh route trong Windows).
+ 
+##2. Các câu lệnh cấu hình mạng trong Ubuntu
+
+- **/etc/init.d/networking restart** : Restart Network Interface
+- **vi /etc/network/interfaces** : Thiết lập file cấu hình mạng trong Ubuntu
+- **route add default gw 192.168.1.1** : Đặt địa chỉ IP 192.168.1.1 làm default gateway trong Ubuntu.
+- **route delete default gw 192.168.1.1** : Xóa địa chỉ default gateway 192.168.1.1
+- **route add -net 192.168.5.0 mask 255.255.255.0 dev eth0** : Để add một routing tĩnh đến mạng (cho card mạng eth0). Ngược lại với add ta dùng lệnh delete.
