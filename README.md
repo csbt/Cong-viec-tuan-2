@@ -84,4 +84,24 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
   + **o** : thêm một dòng bên dưới và cho phép nhập kí tự vào
   + **O** : thêm một dòng bên trên và cho phép nhập kí tự vào
 
-#III
+#III. Các chế độ của card mạng trên máy ảo:
+
+* **Chế độ Bridge**: ở chế độ này thì card mạng trên máy ảo sẽ được gắn vào VMnet0 và VMnet0 này liên kết trực tiếp với card mạng vật lý. Ở chế độ này máy ảo sẽ kết nối internet thông qua lớp card mạng vật lý và có chung lớp mạng với card mạng vật lý.
+
+* **Chế độ NAT**: ở chế độ này thì card mạng của máy ảo kết nối với VMnet8, VNnet8 cho phép máy ảo đi internet thông qua cơ chế NAT (NAT device).
+
+	Lúc này lớp mạng bên trong máy ảo khác hoàn toàn với lớp mạng của card vật lý bên ngoài. IP của card mạng sẽ được cấp bởi DHCP VMnet8 cấp, trong trường hợp bạn muốn thiết lập IP tĩnh cho card mạng máy ảo bạn phải đảm bảo chung lớp mạng với VNnet8 thì máy ảo mới có thể đi internet.
+
+* **Cơ chế Host-only**: ở cơ chế này máy ảo được kết nối với VMnet có tính có tính năng Host-only, trong trường hợp này là VMnet1 (bạn có thể add nhiều VMnet Host-only). VMnet Host-only kết nối ra một card mạng ảo tương ứng ngoài máy thật.
+
+	Ở chế độ này máy ảo không có kết nối internet. IP của máy ảo được cấp bởi DHCP của VMnet tương ứng.Trong nhiều trường hợp đặc biệt cần cấu hình riêng, ta có thể tắt DHCP trên VMnet và cấu hình IP bằng tay cho máy ảo.
+
+#IV. Một số lệnh cấu hình Network trên Ubuntu
+
+##1. Các câu lệnh kiểm tra thông tin mạng trong Ubuntu
+
+- **ifconfig -a** : Kiểm tra cấu hình các card mạng
+- **hostname** :  xem hostname 
+- **grep eth & ifconfig** : Xem thông tin cấu hình các card mạng (MAC, địa chỉ IP, gateway..)  của tất cả các card mạng trong máy (tương tự lệnh ipconfig của Windows)
+  
+- **route -n** :Kiểm tra đường đi của gói tin (tương tự lệnh route trong Windows).
