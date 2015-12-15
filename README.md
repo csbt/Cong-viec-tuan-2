@@ -11,6 +11,7 @@ VI có 2 chế độ là command và insert :
 - **<CTRL> + U** : để lên nửa trang
 - **<CTRL> + F** : để xuống 1 trang
 - **<CTRL> + B** : để lên 1 trang
+- 
 ###Các lệnh với con trỏ
 Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
   + **h** : sang trái 1 kí tự
@@ -43,11 +44,16 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
 - **ndd** : để xóa dòng hiện tại và n-1 dòng bên dưới dòng hiện tại
  
     VD : **2dd** : xóa 2 dòng
+
 ###Các lệnh tìm kiếm
+- **?** : tìm ngược trở lên
+- **/** : tìm xuôi
 
 ###Các lệnh thay thế
 - **:ab abcd lenh thay the** : thay thế *abcd* bằng *lenh thay the* khi ở chế độ Insert 
-- **:s/text1/text2/g** :  thay thế text1 bằng text2
+- **:s/text1/text2/g** :  thay thế text1 bằng text2 : :%s/text/text2/g
+- 
+
 ###Một số lệnh khác
 - **v** : để bắt đầu bôi đen
 - **.** : tiếp tục thực hiện lệnh trước đó
@@ -68,3 +74,17 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
   + **o** : thêm một dòng bên dưới và cho phép nhập kí tự vào
   + **O** : thêm một dòng bên trên và cho phép nhập kí tự vào
 
+##Thao tác với tập tin
+:w – ghi vào tập tin
+
+:x – lưu và thoát khỏi chế độ soạn thảo
+
+:wq – lưu và thoát khỏi chế độ soạn thảo
+
+:w – lưu vào tập tin mới
+
+:q – thoát nếu ko có thay đổi
+
+:q! – thoát không lưu
+
+:r – mở tập tin đọc
