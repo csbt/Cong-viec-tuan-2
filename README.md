@@ -75,16 +75,11 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
   + **O** : thêm một dòng bên trên và cho phép nhập kí tự vào
 
 ##Thao tác với tập tin
-:w – ghi vào tập tin
-
-:x – lưu và thoát khỏi chế độ soạn thảo
-
-:wq – lưu và thoát khỏi chế độ soạn thảo
-
-:w – lưu vào tập tin mới
-
-:q – thoát nếu ko có thay đổi
-
-:q! – thoát không lưu
-
-:r – mở tập tin đọc
+- **:w** :  lưu văn bản với tên mặc định
+- **:w newfile.txt** : để save nội dung của file hiện tại vào một file mới là newfile.txt ( tựa “save as” bên Win Word )
+- **:x** : lưu và thoát khỏi chế độ soạn thảo
+- **:q!** : thoát không lưu
+- Nếu dùng vi để mở nhiều file ( vi file1 file2 file3 )
+  + **:n#** : để nhảy đến file tiếp theo
+  + **:n vi2** : để nhảy tới file 'vi2'
+  + **:rew** : để nhảy ngược lại
