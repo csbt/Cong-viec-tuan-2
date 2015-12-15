@@ -44,8 +44,10 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
  
     VD : **2dd** : xóa 2 dòng
 ###Các lệnh tìm kiếm
+
 ###Các lệnh thay thế
 - **:ab abcd lenh thay the** : thay thế *abcd* bằng *lenh thay the* khi ở chế độ Insert 
+- **:s/text1/text2/g** :  thay thế text1 bằng text2
 ###Một số lệnh khác
 - **v** : để bắt đầu bôi đen
 - **.** : tiếp tục thực hiện lệnh trước đó
