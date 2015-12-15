@@ -115,3 +115,32 @@ Di chuyển con trỏ bằng phím mũi tên hoặc các phím:
 - **route add default gw 192.168.1.1** : Đặt địa chỉ IP 192.168.1.1 làm default gateway trong Ubuntu.
 - **route delete default gw 192.168.1.1** : Xóa địa chỉ default gateway 192.168.1.1
 - **route add -net 192.168.5.0 mask 255.255.255.0 dev eth0** : Để add một routing tĩnh đến mạng (cho card mạng eth0). Ngược lại với add ta dùng lệnh delete.
+
+#V. Phân tích gói tin IP datagram
+<a href="http://imgur.com/ssKaKx6"><img src="http://i.imgur.com/ssKaKx6.png" title="source: imgur.com" /></a>
+
+- **Version** (4 bit): chỉ phiên bản (version) hiện hành của IP được cài đặt.
+- **IHL**: Internet header length (4 bit): chỉ độ dài phần header tính theo đơn vị từ (word - 32 bit).
+- **Type of Service** (8 bit): đặc tả tham số về yêu cầu dịch vụ: Thông tin về loại dịch vụ và mức ưu tiên của gói IP.
+	+ **Precedence** (3 bits): chỉ thị về quyền ưu tiên gửi datagram:
+		. 111 Network Control (cao nhất)
+
+		. 011- flash
+		
+		. 110 Internetwork Control
+		
+		. 010 Immediate
+		
+		. 101 CRITIC/ECP
+		
+		. 001 Priority
+		
+		. 100 Flas Override
+		
+		. 000 Routine (thấp nhất)
+	+ **D (delay)** (1 bit) : chỉ độ trễ yêu cầu
+
+		. D = 0 độ trễ bình thường
+		
+		. D = 1 độ trễ thấp
+	  
